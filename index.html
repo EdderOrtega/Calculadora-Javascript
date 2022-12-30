@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora LaunchX</h1>
+    <div class="contenedor-calculadora">
+        <div class="botones">
+                <div class="screen">
+                    <input id="operacion" value="0" type="text" disabled>
+                </div>
+                <div class="fila1">
+                    <button class="limpiarnum" value="limpiar" onclick="limpiar()">AC</button>
+                    <button value="**"  onclick="Ingresaoperador('**')">^</button>
+                    <button value="raiz"  onclick="raiz()">√</button>            
+
+                </div>
+                <div class="fila">
+                    <button value="1" id="numero" onclick="numIngreso(this.value)">1</button>
+                    <button value="2" id="numero" onclick="numIngreso(this.value)">2</button>            
+                    <button value="3" id="numero" onclick="numIngreso(this.value)">3</button>            
+                    <button value="+" onclick="Ingresaoperador(this.value)">+</button>
+                </div>
+                <div class="fila">  
+                    <button value="4" id="numero" onclick="numIngreso(this.value)">4</button>
+                    <button value="5" id="numero" onclick="numIngreso(this.value)">5</button>            
+                    <button value="6" id="numero" onclick="numIngreso(this.value)">6</button>
+                    <button value="-" onclick="Ingresaoperador(this.value)">-</button>
+                </div>
+                <div class="fila">
+                    <button value="7" id="numero" onclick="numIngreso(this.value)">7</button>
+                    <button value="8" id="numero" onclick="numIngreso(this.value)">8</button>
+                    <button value="9" id="numero" onclick="numIngreso(this.value)">9</button>
+                    <button value="*" onclick="Ingresaoperador(this.value)">*</button>
+                </div>
+                <div class="fila">
+                    <button value="/" onclick="Ingresaoperador(this.value)">÷</button>
+                    <button value="0" id="numero" onclick="numIngreso(this.value)">0</button>
+                    <button value="." onclick="numIngreso(this.value)">.</button>
+                    <button value="=" class="igual" onclick="resultadofinal()">=</button>
+                </div>
+            </div>
+    </div>
+
+    <footer>
+        <script src="./scripts.js"></script>
+    </footer>
+</body>
+</html>
